@@ -409,11 +409,12 @@
             `;
         }
 
-        // Initial update call
-        updateWagerRace();
-
-        // Starry Background Animation
+        // Initial update call and refresh every 90 seconds
         document.addEventListener('DOMContentLoaded', () => {
+            updateWagerRace(); // Initial update call
+            setInterval(updateWagerRace, 90000); // Update every 90 seconds
+
+            // Starry Background Animation
             const starsOverlay = document.querySelector('.stars-overlay');
 
             for (let i = 0; i < 250; i++) {
