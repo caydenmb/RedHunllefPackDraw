@@ -7,7 +7,7 @@
     <title>Redhunllef Livestream</title>
 
     <!-- Favicon (Logo) -->
-    <link rel="icon" href="redlogo.png" type="image/png">
+    <link rel="icon" href="/static/redlogo.png" type="image/png">
 
     <!-- Google Fonts (Roboto for sleek typography) -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -285,7 +285,7 @@
     <div class="container">
         <header>
             <a href="https://kick.com/redhunllef">
-                <img src="redlogo.png" alt="Redhunllef Logo">
+                <img src="/static/redlogo.png" alt="Redhunllef Logo">
             </a>
         </header>
         <!-- Main Section with Sponsor Message and Buttons -->
@@ -340,9 +340,9 @@
                     standingsContainer.innerHTML = '';
 
                     const top3 = [
-                        { place: '1st', username: data.top1?.username || placeholderData.top1.username, wager: data.top1?.wager || placeholderData.top1.wager, medal: 'static/1st.png' },
-                        { place: '2nd', username: data.top2?.username || placeholderData.top2.username, wager: data.top2?.wager || placeholderData.top2.wager, medal: 'static/2nd.png' },
-                        { place: '3rd', username: data.top3?.username || placeholderData.top3.username, wager: data.top3?.wager || placeholderData.top3.wager, medal: 'static/3rd.png' }
+                        { place: '1st', username: data.top1?.username || placeholderData.top1.username, wager: data.top1?.wager || placeholderData.top1.wager, medal: '/static/1st.png' },
+                        { place: '2nd', username: data.top2?.username || placeholderData.top2.username, wager: data.top2?.wager || placeholderData.top2.wager, medal: '/static/2nd.png' },
+                        { place: '3rd', username: data.top3?.username || placeholderData.top3.username, wager: data.top3?.wager || placeholderData.top3.wager, medal: '/static/3rd.png' }
                     ];
 
                     top3Container.innerHTML = `
@@ -385,9 +385,9 @@
             standingsContainer.innerHTML = '';
 
             const top3 = [
-                { place: '1st', username: placeholderData.top1.username, wager: placeholderData.top1.wager, medal: 'static/1st.png' },
-                { place: '2nd', username: placeholderData.top2.username, wager: placeholderData.top2.wager, medal: 'static/2nd.png' },
-                { place: '3rd', username: placeholderData.top3.username, wager: placeholderData.top3.wager, medal: 'static/3rd.png' }
+                { place: '1st', username: placeholderData.top1.username, wager: placeholderData.top1.wager, medal: '/static/1st.png' },
+                { place: '2nd', username: placeholderData.top2.username, wager: placeholderData.top2.wager, medal: '/static/2nd.png' },
+                { place: '3rd', username: placeholderData.top3.username, wager: placeholderData.top3.wager, medal: '/static/3rd.png' }
             ];
 
             top3Container.innerHTML = `
